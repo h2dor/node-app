@@ -1,6 +1,5 @@
 #!/bin/sh
 ssh jenkins@localhost <<EOF
- cd ~/node-app
  git pull
  npm install
  pm2 start index.js
