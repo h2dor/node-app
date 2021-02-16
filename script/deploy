@@ -1,6 +1,5 @@
 #!/bin/sh
- npm install
- sudo npm install -g pm2
- /bin/pm2 start index.js
+ /root/.nvm/versions/node/v15.8.0/bin/npm install
+ /root/.nvm/versions/node/v15.8.0/bin/pm2 start index.js
  exit
 EOF
