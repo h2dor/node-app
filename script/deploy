@@ -1,6 +1,6 @@
 #!/bin/sh
  sudo npm install
  sudo npm install pm2@latest -g
- sudo /usr/local/bin/pm2 start index.js
+ #sudo /usr/local/bin/pm2 start index.js
  exit
 EOF
