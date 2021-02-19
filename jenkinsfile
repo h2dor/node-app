@@ -16,9 +16,10 @@ pipeline {
                 sh './script/deploy'
             }
         }
-        stage ('Build image')
+        stage ('Build image') {
             steps {
                 sh 'sudo docker build -t root/2dorh111111' 
+                }
                 }
    }
    
