@@ -18,7 +18,7 @@ pipeline {
         }
         stage ('Build image') {
             steps {
-                sh 'sudo docker build -t root/2dorh111111' 
+                sh 'sudo docker build -t root/2dorh111111 .' 
                 }
                 }
    }
