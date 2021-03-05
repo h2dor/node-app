@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-            agent { label 'slave1bubuntu'}
+            agent { label 'AnotherSlave'}
             steps {
                 sh 'npm install'
             }
