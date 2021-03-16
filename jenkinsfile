@@ -18,7 +18,7 @@ pipeline {
        }
         stage ('copy app') {
             steps {
-                scp node-app jenkins@10.0.2.4:/opt
+                sh 'scp node-app jenkins@10.0.2.4:/opt'
                   }
         }
         stage ('Build image') {
