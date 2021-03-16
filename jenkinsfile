@@ -2,7 +2,6 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-            agent { label 'AnotherSlave'}
             steps {
                 sh 'npm install'
             }
@@ -16,9 +15,11 @@ pipeline {
             steps {
                 sh './script/deploy'
             }
+       }
         stage ('copy app') {
             steps {
                 scp node-app jenkins@10.0.2.4:/opt
+                  }
         }
         stage ('Build image') {
             steps {
