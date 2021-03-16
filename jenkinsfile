@@ -18,7 +18,7 @@ pipeline {
        }
         stage ('copy app') {
             steps {
-                sh 'scp * jenkins@10.0.2.4:/opt/razer-wallet-api/'
+                sh 'scp -r * jenkins@10.0.2.4:/opt/razer-wallet-api/'
                   }
         }
         stage ('Build image') {
